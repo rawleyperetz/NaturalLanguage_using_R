@@ -57,12 +57,12 @@ remove_percentage <- function(n, doc){
 library(readr)
 library(stringr)
 percentage <- 0.01
-load_data <- unlist(strsplit(str_squish(gsub(",","",remove_percentage(percentage, wordTokenize(str_squish(read_file("C:/Users/7flig/Desktop/RWorks/sherlockdataNLP.txt")))))),split=" "))
+load_data <- unlist(strsplit(str_squish(gsub(",","",remove_percentage(percentage, wordTokenize(str_squish(read_file(".../sherlockdataNLP.txt")))))),split=" "))
 
 # Couldn't bring myself to delete: number 2
 # Chances are, I might need them some day like an iphone box
-#load_data <- unlist(strsplit(str_squish(wordTokenize(str_squish(read_file("C:/Users/7flig/Desktop/RWorks/sherlockdataNLP.txt")))),split = " "))
-#load_data <-  strsplit(str_squish(wordTokenize(read_file("C:/Users/7flig/Desktop/RWorks/sherlockdataNLP.txt"))),split = " ")
+#load_data <- unlist(strsplit(str_squish(wordTokenize(str_squish(read_file(".../sherlockdataNLP.txt")))),split = " "))
+#load_data <-  strsplit(str_squish(wordTokenize(read_file(".../sherlockdataNLP.txt"))),split = " ")
 
 #Creates vocabulary
 vocab <- unique(load_data)
